@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "person.h": "c",
+    "stdio.h": "c"
+  },
+  "git.ignoreLimitWarning": true,
+  "cmake.configureOnOpen": false
+}

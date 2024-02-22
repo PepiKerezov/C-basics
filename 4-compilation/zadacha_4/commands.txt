@@ -1,0 +1,1 @@
+gcc zadacha_4.c -o zadacha_4.out -lm

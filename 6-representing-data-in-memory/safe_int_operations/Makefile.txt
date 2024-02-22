@@ -1,0 +1,19 @@
+all: safeint.o safeadd.out safesubstract.out safemultiply.out safedivide.out
+
+safeint.o: safeint.h safeint.c
+	gcc safeint.c safeint.h -o safeint.o
+
+safeadd.out: safeadd.c safeint.o
+	gcc safeadd.c safeint.o -o safeadd.out
+
+safesubstract.out: safesubstract.c safeint.o
+	gcc safesubstract.c safeint.o -o safesubstract.out
+
+safemultiply.out: safemultiply.c safeint.o
+	gcc safemultiply.c safeint.o -o safemultiply.out
+
+safedivide.out: safedivide.c safeint.o
+	gcc safedivide.c safeint.o -o safedivide.out
+
+clean:
+	rm -f *.o *.out
